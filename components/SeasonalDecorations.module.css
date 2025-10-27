@@ -1,0 +1,384 @@
+/* 装饰容器 */
+.decorContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* ==================== 轻雾效果 ==================== */
+.mistLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(245, 243, 240, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(245, 243, 240, 0.04) 0%, transparent 50%);
+  animation: mistFlow 20s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* ==================== 背景大型装饰 ==================== */
+.backgroundElements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* 大型枫叶 - 背景装饰 */
+.largeMaple {
+  position: absolute;
+  font-size: 180px;
+  opacity: 0.05;
+  z-index: 0;
+  filter: drop-shadow(0 15px 30px rgba(212, 89, 79, 0.15));
+  animation: gentleRotate 30s linear infinite;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lgMaple1 {
+  top: 10%;
+  right: 15%;
+  animation-duration: 35s;
+}
+
+.lgMaple2 {
+  bottom: 20%;
+  left: 5%;
+  animation-duration: 40s;
+  animation-direction: reverse;
+}
+
+.lgMaple3 {
+  top: 45%;
+  right: 8%;
+  opacity: 0.03;
+  animation-duration: 45s;
+}
+
+/* 大型雪花 - 背景装饰 */
+.largeSnow {
+  position: absolute;
+  font-size: 160px;
+  opacity: 0.06;
+  z-index: 0;
+  filter: drop-shadow(0 15px 35px rgba(125, 180, 212, 0.2));
+  animation: gentleRotate 35s linear infinite;
+  text-shadow: 0 4px 12px rgba(125, 180, 212, 0.3);
+}
+
+.lgSnow1 {
+  top: 15%;
+  left: 8%;
+  animation-duration: 40s;
+}
+
+.lgSnow2 {
+  bottom: 15%;
+  right: 10%;
+  animation-duration: 45s;
+  animation-direction: reverse;
+}
+
+.lgSnow3 {
+  top: 50%;
+  left: 12%;
+  opacity: 0.04;
+  animation-duration: 50s;
+}
+
+/* ==================== 飘落的枫叶 ==================== */
+.mapleleaves {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.maple {
+  position: absolute;
+  font-size: 42px;
+  opacity: 0.25;
+  animation: gentleFall 14s linear infinite;
+  filter: drop-shadow(0 3px 6px rgba(212, 89, 79, 0.3));
+  font-weight: bold;
+}
+
+/* 8个枫叶的位置和延迟 - 仅在两侧 */
+.maple1 { left: 2%; top: -50px; animation-duration: 15s; animation-delay: 0s; }
+.maple2 { left: 5%; top: -50px; animation-duration: 17s; animation-delay: 1s; opacity: 0.22; }
+.maple3 { left: 8%; top: -50px; animation-duration: 16s; animation-delay: 2s; }
+.maple4 { left: 92%; top: -50px; animation-duration: 18s; animation-delay: 3s; opacity: 0.23; }
+.maple5 { left: 95%; top: -50px; animation-duration: 16s; animation-delay: 4s; }
+.maple6 { left: 98%; top: -50px; animation-duration: 17s; animation-delay: 5s; opacity: 0.22; }
+.maple7 { left: 1%; top: -50px; animation-duration: 18s; animation-delay: 6s; }
+.maple8 { left: 99%; top: -50px; animation-duration: 16s; animation-delay: 7s; opacity: 0.23; }
+
+/* ==================== 飘落的雪花 ==================== */
+.snowflakes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.snowflake {
+  position: absolute;
+  font-size: 38px;
+  opacity: 0.28;
+  animation: gentleSnowFall 16s linear infinite;
+  filter: drop-shadow(0 3px 8px rgba(125, 180, 212, 0.4));
+  font-weight: bold;
+}
+
+/* 10个雪花的位置和延迟 - 仅在两侧 */
+.snow1 { left: 1%; top: -40px; animation-duration: 17s; animation-delay: 0s; }
+.snow2 { left: 3%; top: -40px; animation-duration: 19s; animation-delay: 0.8s; opacity: 0.26; }
+.snow3 { left: 5%; top: -40px; animation-duration: 18s; animation-delay: 1.6s; }
+.snow4 { left: 7%; top: -40px; animation-duration: 20s; animation-delay: 2.4s; opacity: 0.27; }
+.snow5 { left: 9%; top: -40px; animation-duration: 18s; animation-delay: 3.2s; }
+.snow6 { left: 91%; top: -40px; animation-duration: 19s; animation-delay: 4s; opacity: 0.26; }
+.snow7 { left: 93%; top: -40px; animation-duration: 17s; animation-delay: 4.8s; }
+.snow8 { left: 95%; top: -40px; animation-duration: 20s; animation-delay: 5.6s; opacity: 0.27; }
+.snow9 { left: 97%; top: -40px; animation-duration: 18s; animation-delay: 6.4s; }
+.snow10 { left: 99%; top: -40px; animation-duration: 19s; animation-delay: 7.2s; opacity: 0.26; }
+
+/* ==================== 柔光分割线 ==================== */
+.glowDivider {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(212, 89, 79, 0.3) 20%,
+    rgba(212, 89, 79, 0.4) 30%,
+    rgba(212, 89, 79, 0.3) 40%,
+    transparent 50%,
+    rgba(125, 180, 212, 0.3) 60%,
+    rgba(125, 180, 212, 0.4) 70%,
+    rgba(125, 180, 212, 0.3) 80%,
+    transparent 100%);
+  box-shadow:
+    0 0 8px rgba(212, 89, 79, 0.2),
+    0 0 16px rgba(125, 180, 212, 0.15);
+  z-index: 8;
+}
+
+/* ==================== 角落装饰 ==================== */
+.cornerDecor {
+  position: absolute;
+  z-index: 8;
+  pointer-events: none;
+}
+
+.topLeftCorner {
+  top: 50px;
+  left: 50px;
+}
+
+.topRightCorner {
+  top: 50px;
+  right: 50px;
+}
+
+.cornerText {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Noto Serif SC', serif;
+  color: rgba(212, 89, 79, 0.6);
+  letter-spacing: 3px;
+  animation: subtleGlow 4s ease-in-out infinite;
+  text-shadow:
+    0 0 4px rgba(212, 89, 79, 0.2),
+    0 0 8px rgba(125, 180, 212, 0.1);
+}
+
+/* ==================== 动画效果 ==================== */
+@keyframes gentleFall {
+  0% {
+    transform: translateY(0) rotateZ(0deg) rotateX(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(50vh) rotateZ(180deg) rotateX(180deg);
+  }
+  95% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(100vh) rotateZ(360deg) rotateX(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes gentleSnowFall {
+  0% {
+    transform: translateY(0) translateX(0) rotateZ(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.28;
+  }
+  50% {
+    transform: translateY(50vh) translateX(30px) rotateZ(180deg);
+  }
+  95% {
+    opacity: 0.28;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-30px) rotateZ(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes gentleRotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes subtleGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(212, 89, 79, 0.2),
+      0 0 8px rgba(125, 180, 212, 0.1);
+  }
+  50% {
+    text-shadow:
+      0 0 8px rgba(212, 89, 79, 0.4),
+      0 0 16px rgba(125, 180, 212, 0.2);
+  }
+}
+
+@keyframes mistFlow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* ==================== 响应式处理 ==================== */
+@media (max-width: 1024px) {
+  .largeMaple {
+    font-size: 120px;
+    opacity: 0.04;
+  }
+
+  .largeSnow {
+    font-size: 110px;
+    opacity: 0.05;
+  }
+
+  .maple {
+    font-size: 36px;
+    opacity: 0.22;
+  }
+
+  .snowflake {
+    font-size: 32px;
+    opacity: 0.25;
+  }
+
+  .cornerText {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .largeMaple {
+    font-size: 80px;
+    opacity: 0.03;
+  }
+
+  .largeSnow {
+    font-size: 75px;
+    opacity: 0.04;
+  }
+
+  .maple {
+    font-size: 32px;
+    opacity: 0.2;
+  }
+
+  .snowflake {
+    font-size: 28px;
+    opacity: 0.22;
+  }
+
+  .glowDivider {
+    display: none;
+  }
+
+  .cornerText {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .topLeftCorner {
+    top: 30px;
+    left: 30px;
+  }
+
+  .topRightCorner {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .largeMaple {
+    font-size: 60px;
+    opacity: 0.02;
+  }
+
+  .largeSnow {
+    font-size: 55px;
+    opacity: 0.03;
+  }
+
+  .maple {
+    font-size: 24px;
+    opacity: 0.18;
+  }
+
+  .snowflake {
+    font-size: 20px;
+    opacity: 0.2;
+  }
+
+  .cornerText {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .topLeftCorner {
+    top: 20px;
+    left: 20px;
+  }
+
+  .topRightCorner {
+    top: 20px;
+    right: 20px;
+  }
+}
