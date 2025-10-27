@@ -43,15 +43,13 @@ export default function Home() {
             </h1>
 
             <p className={styles.tagline}>
-              A brave climber in the world of product design
+              A brave climber in the boundless field of intelligence
             </p>
 
             <p className={styles.description}>
-              一个在产品设计届努力攀登的新生
+              怀揣无边的好奇与纯粹的探索力，徜徉于人工智能与设计的交汇处，用算法勾勒思维的形状，用创造回应未知的世界。
               <br />
-              拥有一颗毫无边界的好奇心和一股心无旁骛的探索力
-              <br />
-              这句话来自草帽Smao
+              ——这句话来自 晨光Lumiere
             </p>
           </section>
 
